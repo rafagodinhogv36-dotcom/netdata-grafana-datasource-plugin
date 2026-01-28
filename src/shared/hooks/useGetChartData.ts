@@ -60,7 +60,7 @@ export const useGetChartData = async ({
       options: ['jsonwrap', 'flip', 'ms'],
       scope: {
         contexts: [contextId],
-        nodes,
+        nodes: nodes.length ? nodes : ['*'],
         dimensions,
         labels,
       },
